@@ -4,7 +4,7 @@
   "description": "",
   "main": "./app.ts",
   "scripts": {
-    "dev": "npx tsx ./app.ts ",
+    "dev": "npx tsx watch ./app.ts ",
     "start": "node build/app.js",
     "build": "rm -rf build/ && tsc"
   },
