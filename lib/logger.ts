@@ -1,0 +1,10 @@
+import chalk, { Chalk } from "chalk"
+
+export default class Logger  {
+    public static log = (args: any) => this.info(args)
+    public static info = (args: any) => console.log(chalk.blue(`[${new Date().toLocaleString()}] [INFO] `), typeof args === "string" ? chalk.blueBright(args) : args)
+    public static error = (args: any) => console.log(chalk.red(`[${new Date().toLocaleString()}] [INFO] `), typeof args === "string" ? chalk.redBright(args) : args)
+    public static warning = (args: any) => console.log(chalk.yellow(`[${new Date().toLocaleString()}] [INFO] `), typeof args === "string" ? chalk.yellowBright(args) : args)
+}
+
+const news = new Logger() 
